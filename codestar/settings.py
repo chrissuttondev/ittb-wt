@@ -91,6 +91,8 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+SECRET_KEY = os.environ.get("?v9Zu/5Q~1FeaPz")
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
