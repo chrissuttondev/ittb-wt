@@ -9,6 +9,7 @@
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
+        <!--for lopp-->        
                 {% for post in post_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
@@ -20,7 +21,7 @@
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-text">{{post.excerpt}}</p>
+                                <p class="card-text">{{ post.excerpt }}</p>
                             </a>
 
                             <hr />
@@ -33,6 +34,7 @@
             </div>
             <div class="row">
                 {% endif %}
+                <!--End of for loop-->
                 {% endfor %}
 
             </div>
