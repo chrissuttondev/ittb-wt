@@ -74,7 +74,11 @@
             </div>
         </div>
     </nav>
-
+    {% if user.is_authenticated %}
+        <p class="text-end m-3">Your are logged in as {{ user }}</p>
+    {% else %}
+        <p class="text-end m-3">Please log in</p>
+    {% endif %}
     <main class="flex-shrink-0 main-bg">
 
         {% block content %}
