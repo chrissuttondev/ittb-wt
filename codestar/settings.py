@@ -29,7 +29,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True    
+DEBUG = False    
 
 ALLOWED_HOSTS = ['8000-chrissuttondev-ittbwt-tg3fw5f3m0k.ws-eu108.gitpod.io',
 '.herokuapp.com']
